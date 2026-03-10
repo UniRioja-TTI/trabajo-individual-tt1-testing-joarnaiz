@@ -11,6 +11,7 @@ public class CEmail implements InterfazEnviarEmails {
     public CEmail(Logger logger) {
         this.log = logger;
     }
+
     @Override
     public boolean enviarEmail(Destinatario dest, String email) {
         this.log.info("Enviando email a: "+dest+ "contenido: "+email);
